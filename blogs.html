@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blogs — Kunal Gurtatta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body id="top" class="blogs-page">
+
+<nav>
+  <a href="portfolio.html" class="nav-logo">~/dev</a>
+  <ul class="nav-links">
+    <li><a href="portfolio.html#about">about</a></li>
+    <li><a href="portfolio.html#experience">work</a></li>
+    <li><a href="portfolio.html#projects">projects</a></li>
+    <li><a href="blogs.html" class="nav-active">blogs</a></li>
+    <li><a href="portfolio.html#contact">contact</a></li>
+  </ul>
+</nav>
+
+<main class="container blogs-container">
+  <section class="blogs-hero">
+    <div class="hero-eyebrow">notes from the terminal</div>
+    <h1>thoughts &amp; <span>things.</span></h1>
+    <p class="blogs-intro">
+      writing about backend systems, security, open source, and the small details
+      that make software feel simple.
+    </p>
+    <div class="blogs-meta">
+      <span><i class="status-dot"></i> 06 notes published</span>
+      <span>read time: 5 min avg.</span>
+    </div>
+  </section>
+
+  <section class="featured-post reveal">
+    <div class="featured-copy">
+      <div class="post-kicker">featured / systems</div>
+      <h2>the boring parts of software are usually the important parts</h2>
+      <p>
+        Reliable software is less about clever tricks and more about making good
+        decisions repeatable. A practical look at boundaries, defaults, and failure paths.
+      </p>
+      <div class="post-footer">
+        <span>jun 12, 2025 · 7 min read</span>
+        <a href="blog/index.html?post=mock-blog.md" class="text-link">read note <span>↗</span></a>
+      </div>
+    </div>
+    <div class="featured-art" aria-hidden="true">
+      <div class="art-orbit orbit-one"></div>
+      <div class="art-orbit orbit-two"></div>
+      <div class="art-core">01</div>
+      <div class="art-label art-label-top">reliability</div>
+      <div class="art-label art-label-bottom">by design</div>
+    </div>
+  </section>
+
+  <section class="blog-list-section">
+    <div class="blog-toolbar">
+      <div>
+        <div class="section-label">archive</div>
+        <div class="section-title">all notes</div>
+      </div>
+      <label class="blog-search">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" id="blog-search" placeholder="search notes" aria-label="Search notes" />
+      </label>
+    </div>
+
+    <div class="blog-filters" role="group" aria-label="Filter notes by category">
+      <button class="filter-btn active" type="button" data-filter="all">all</button>
+      <button class="filter-btn" type="button" data-filter="systems">systems</button>
+      <button class="filter-btn" type="button" data-filter="security">security</button>
+      <button class="filter-btn" type="button" data-filter="open-source">open source</button>
+      <button class="filter-btn" type="button" data-filter="web3">web3</button>
+    </div>
+
+    <div class="blog-grid" id="blog-grid">
+      <article class="blog-card reveal" data-category="systems" data-search="designing apis that age well backend systems api design">
+        <div class="blog-card-top"><span class="post-kicker">systems</span><span class="post-number">01</span></div>
+        <h3>designing APIs that age well</h3>
+        <p>Small choices in naming, errors, and versioning compound into a much nicer developer experience.</p>
+        <div class="post-footer"><span>may 28, 2025 · 6 min</span><a href="blog/index.html?post=mock-blog.md" class="text-link">read <span>↗</span></a></div>
+      </article>
+
+      <article class="blog-card reveal" data-category="security" data-search="security static analysis finding signal in noisy binaries reverse engineering">
+        <div class="blog-card-top"><span class="post-kicker">security</span><span class="post-number">02</span></div>
+        <h3>finding signal in noisy binaries</h3>
+        <p>A field guide to using static analysis when the thing you are looking at refuses to explain itself.</p>
+        <div class="post-footer"><span>apr 14, 2025 · 8 min</span><a href="#" class="text-link">read <span>↗</span></a></div>
+      </article>
+
+      <article class="blog-card reveal" data-category="open-source" data-search="open source contribution getting started maintainers pull requests">
+        <div class="blog-card-top"><span class="post-kicker">open source</span><span class="post-number">03</span></div>
+        <h3>your first useful open-source contribution</h3>
+        <p>How to find a good first issue, communicate clearly, and leave a project better than you found it.</p>
+        <div class="post-footer"><span>mar 02, 2025 · 5 min</span><a href="#" class="text-link">read <span>↗</span></a></div>
+      </article>
+
+      <article class="blog-card reveal" data-category="web3" data-search="web3 smart contract audit solidity threat modeling">
+        <div class="blog-card-top"><span class="post-kicker">web3</span><span class="post-number">04</span></div>
+        <h3>smart contract audits start with questions</h3>
+        <p>Before reading a single line of Solidity, map the assumptions, actors, and ways value can move.</p>
+        <div class="post-footer"><span>feb 19, 2025 · 7 min</span><a href="#" class="text-link">read <span>↗</span></a></div>
+      </article>
+
+      <article class="blog-card reveal" data-category="systems" data-search="distributed systems queues backpressure reliability">
+        <div class="blog-card-top"><span class="post-kicker">systems</span><span class="post-number">05</span></div>
+        <h3>backpressure is a product feature</h3>
+        <p>Queues do more than absorb traffic. They help your users get a predictable response when systems are busy.</p>
+        <div class="post-footer"><span>jan 30, 2025 · 4 min</span><a href="#" class="text-link">read <span>↗</span></a></div>
+      </article>
+
+      <article class="blog-card reveal" data-category="security" data-search="security honeypots detection engineering python tooling">
+        <div class="blog-card-top"><span class="post-kicker">security</span><span class="post-number">06</span></div>
+        <h3>shipping small tools for big investigations</h3>
+        <p>The best security tooling often starts as a focused script with one sharp question to answer.</p>
+        <div class="post-footer"><span>dec 11, 2024 · 5 min</span><a href="#" class="text-link">read <span>↗</span></a></div>
+      </article>
+    </div>
+    <p class="empty-state" id="empty-state" hidden>no notes found — try another search.</p>
+  </section>
+
+  <footer>
+    <span class="footer-copy">© 2025 kunal gurtatta. built with &lt;3</span>
+    <div class="footer-links">
+      <a href="portfolio.html">portfolio</a>
+      <a href="#top">back to top ↑</a>
+    </div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const blogCards = document.querySelectorAll('.blog-card');
+  const searchInput = document.getElementById('blog-search');
+  const emptyState = document.getElementById('empty-state');
+  let selectedFilter = 'all';
+
+  function filterPosts() {
+    const query = searchInput.value.trim().toLowerCase();
+    let visiblePosts = 0;
+
+    blogCards.forEach((card) => {
+      const matchesFilter = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+      const matchesSearch = !query || card.dataset.search.includes(query) || card.querySelector('h3').textContent.toLowerCase().includes(query);
+      const visible = matchesFilter && matchesSearch;
+      card.hidden = !visible;
+      if (visible) visiblePosts += 1;
+    });
+
+    emptyState.hidden = visiblePosts > 0;
+  }
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      selectedFilter = button.dataset.filter;
+      filterButtons.forEach((item) => item.classList.toggle('active', item === button));
+      filterPosts();
+    });
+  });
+
+  searchInput.addEventListener('input', filterPosts);
+</script>
+</body>
+</html>

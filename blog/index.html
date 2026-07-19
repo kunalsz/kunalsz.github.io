@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog — Kunal Gurtatta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body id="top" class="article-page markdown-article-page">
+
+<nav class="article-nav">
+  <a href="../portfolio.html" class="nav-logo">~/dev</a>
+  <ul class="nav-links">
+    <li><a href="../portfolio.html#about">about</a></li>
+    <li><a href="../portfolio.html#experience">work</a></li>
+    <li><a href="../portfolio.html#projects">projects</a></li>
+    <li><a href="../blogs.html" class="nav-active">blogs</a></li>
+    <li><a href="../portfolio.html#contact">contact</a></li>
+  </ul>
+</nav>
+
+<main class="article-shell">
+  <aside class="article-sidebar">
+    <a href="../blogs.html" class="article-back sidebar-back">← back to blog</a>
+    <div class="contents-label">contents</div>
+    <nav class="contents-nav" id="contents-nav" aria-label="Article contents"></nav>
+  </aside>
+
+  <article class="article-content">
+    <header class="article-header">
+      <div class="article-meta"><span id="article-category">loading</span><span id="article-meta">loading article</span></div>
+      <h1 id="article-title">loading article...</h1>
+      <p class="article-dek" id="article-description"></p>
+      <div class="article-rule"></div>
+      <div class="listen-bar" id="listen-bar">
+        <button class="listen-button" type="button" id="listen-toggle" aria-label="Play article audio" title="Play article audio">
+          <svg class="play-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <span class="listen-label">listen</span>
+        <div class="listen-track"><span id="listen-progress"></span></div>
+        <span class="listen-time" id="listen-time">0:00 / 08:42</span>
+      </div>
+    </header>
+
+    <div class="article-prose" id="article-body"></div>
+
+    <footer class="article-footer">
+      <div class="article-tags" id="article-tags"></div>
+      <div class="article-next-label">back to archive</div>
+      <a href="../blogs.html" class="article-next">read more notes <span>→</span></a>
+    </footer>
+  </article>
+</main>
+
+<footer class="article-site-footer">
+  <div class="article-site-footer-inner">
+    <span class="footer-copy">© 2025 kunal gurtatta. built with &lt;3</span>
+    <div class="footer-links">
+      <a href="../blogs.html">all notes</a>
+      <a href="#top">back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>
